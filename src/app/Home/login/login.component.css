@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+   
+    font-family: 'Poppins', sans-serif;
+  }
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient( #eb8347, 50%,#f2f6ff 50%,#feffff);
+}
+.cont-left{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-bottom-right-radius: 20%;
+    background: linear-gradient(312deg,#dba85e,#ff592c);
+    
+}
+.cont-left .logo{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 40px;
+
+    font-weight: bold;
+}
+.cont-left .logo img{
+    width: 160px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+
+}
+.cont-rigth{
+
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 20%;
+    background: linear-gradient(#f2f6ff,white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-rigth .login-container{
+    width: 450px;
+    background-color: white;
+    height: 550px;
+    border-radius: 20px;
+    display: flex;
+    padding-left: 70px;
+    padding-right: 70px;
+    flex-direction: column;
+    border: 1px solid cornsilk;
+    justify-content: center;
+  
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.login-container h2::after{
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: #f95b2d;
+    position: absolute;
+    bottom: -3px;
+    left: calc(50% - 40px);
+}
+.cont-rigth button{
+    border: none;
+    background-color: #719b80;
+    padding: 8px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color .3s;
+}
+.cont-rigth button:hover{
+    background-color: #61806c;
+}
+.input-style{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.cont-rigth label{
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.input-style input:focus ~ label,
+.input-style input:not(:placeholder-shown) ~ label{
+    font-size: 11px;
+    position: absolute;
+    color: #cf9751;
+    font-weight: bold;
+   padding:0px 5px ;
+    top: -8px;
+   background-color: white;
+    left: 70px;
+}
+.input-style input:focus{
+  border-color: #c88d49;
+ 
+}
+.input-style i{
+    position: absolute;
+    top: 12.5px;
+    font-size: 14px;
+    left: 12.5px;
+    color: #acacac;
+}
+.input-style input{
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+height: 40px;
+font-size: 12px;
+    outline: none;
+    border: 2px solid #f4f4f4;
+    transition: border-color .3s;
+    
+}
+
+
+#change_v{
+    position: absolute;
+    top: 14px;
+    left: calc(100% - 28px);
+}
+.help{
+    font-size: 12px;
+    color: #d9dce2;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.help::after{
+   content: " ";
+   width: 60%;
+   height: 1px;
+   position: absolute;
+   background-color: #d9dce2;
+   top: calc(50% - .5px);
+   left: calc(100% + 7px);
+}
+.help::before{
+    content: " ";
+    width: 60%;
+    height: 1px;
+    top: calc(50% - .5px);
+    position: absolute;
+    right: calc(100% + 7px);
+    background-color: #d9dce2;
+}

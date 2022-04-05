@@ -1,0 +1,26 @@
+<link rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<body>
+    <div class="menu-container">
+        <h2 >Opciones</h2>
+        <div class="op-container">
+            <div class="card" *ngFor=" let op of opciones">
+                <i class="{{op.icono}}"></i>
+                <label >{{op.name}}</label>
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="user-menu">
+        <div class="info">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&usqp=CAU" alt="">
+            <h2>Mario Llori Santiago</h2>
+            <h5 style="font-weight: normal;">Rol : Trabajador</h5>
+            <label [routerLink]="['home']"><i class="fas fa-power-off" style="margin-right: 10px;"></i>Cerrar Sesion</label>
+        </div>
+        
+        
+
+    </div>
+</body>

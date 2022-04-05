@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="cont-left">
+                <label class="logo"><img
+                        src="https://s3.amazonaws.com/files.patmos.upeu.edu.pe/statics/app-assets/images/logo-upeu-blanco.png"
+                        alt=""> Almacen Upeu</label>
+                <img
+                    src="https://freepikpsd.com/file/2019/10/almacen-png-Free-PNG-Images-Transparent.png"
+                    style="margin-right: 75px;" alt="">
+            </div>
+            <div class="cont-rigth">
+                <div class="login-container">
+                    <h2 style="margin: 0 auto;margin-bottom: 25px;font-size: 19px;position: relative;color: black;">Bienvenido!!     </h2>
+                    <span class="help">Ingrese sus credenciales </span>
+                           <img src="assets/logeo.PNG" style="width: 40%;margin: 0 auto;margin-bottom: 25px;" alt="">
+                           <label for="">Usuario</label>
+                        <div class="input-style">
+                            <i class="far fa-user"></i>
+                            <input type="text" minlength="1" name="" id="" placeholder="example">
+                            
+                        </div>
+                        <label >Contraseña</label>
+                        <div class="input-style">
+                            <i class="fas fa-lock"></i>
+                          
+                          <input [type]="show_button ? 'text' : 'password'" name="" minlength="1" id="" placeholder="**************">
+                          
+                          <i  (click)="changevisible()" id="change_v" [class]="show_icon ? 'fas fa-eye-slash' : 'far fa-eye'"></i>
+                            
+                        </div>
+                           <button [routerLink]="['/menu']">Ingresar</button>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
